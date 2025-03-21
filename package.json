@@ -1,7 +1,7 @@
 {
-  "name": "@f4ww4z/mcp-mysql-server",
+  "name": "@alnutile/mcp-mysql-server",
   "version": "0.1.0",
-  "description": "A Model Context Protocol server for MySQL database operations",
+  "description": "A Model Context Protocol server for MySQL database operations with port support",
   "type": "module",
   "bin": {
     "mcp-mysql": "./build/index.js"
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/f4ww4z/mcp-mysql-server"
+    "url": "https://github.com/alnutile/mcp-mysql-server"
   },
   "publishConfig": {
     "access": "public"
