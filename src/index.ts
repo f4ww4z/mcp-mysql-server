@@ -52,8 +52,8 @@ function parseMySQLUrl(url: string): DatabaseConfig {
 
     return {
       host: parsedUrl.hostname,
-      user: parsedUrl.username || '',
-      password: parsedUrl.password || '',
+      user: decodeURIComponent(parsedUrl.username || ''),
+      password: decodeURIComponent(parsedUrl.password || ''),
       database: parsedUrl.pathname.slice(1), // remove leading '/'
       port: parsedUrl.port ? parseInt(parsedUrl.port, 10) : 3306,
     };
@@ -155,7 +155,7 @@ class MySQLServer {
       tools: [
         {
           name: 'connect_db',
-          description: 'Connect to MySQL database',
+          description: 'Switch to a different MySQL database connection. Only use this if you need to connect to a different database than the one configured at startup.',
           inputSchema: {
             type: 'object',
             properties: {
