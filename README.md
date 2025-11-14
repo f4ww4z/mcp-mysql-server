@@ -53,7 +53,35 @@ The server requires the following environment variables to be set in your MCP se
   }
 }
 ```
+## codex 
 
+### mac
+
+在 `~/.codex/config.toml`
+
+```toml
+[mcp_servers.mcp-mysql-server]
+command = "npx"
+args = [
+  "-y",
+  "@f4ww4z/mcp-mysql-server",
+  "mysql://user:password@127.0.0.1:3306/database"
+]
+```
+
+### windows
+
+在 `%USERPROFILE%\.codex\config.toml`
+
+```toml
+[mcp_servers.mcp-mysql-server]
+command = "npx"
+args = [
+  "-y",
+  "@f4ww4z/mcp-mysql-server",
+  "mysql://user:password@127.0.0.1:3306/database"
+]
+```
 
 
 ## Running evals
