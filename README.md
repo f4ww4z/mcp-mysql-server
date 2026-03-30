@@ -6,6 +6,10 @@ A Model Context Protocol server that provides MySQL database operations. This se
 
 <a href="https://glama.ai/mcp/servers/qma33al6ie"><img width="380" height="200" src="https://glama.ai/mcp/servers/qma33al6ie/badge" alt="mcp-mysql-server MCP server" /></a>
 
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/f4ww4z-mcp-mysql-server).
+
 ## Installation
 
 ### Installing via Smithery
